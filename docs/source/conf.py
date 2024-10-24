@@ -15,7 +15,7 @@ import sys
 from importlib.metadata import distribution
 
 sys.path.insert(0, os.path.abspath("../../src"))
-import pfmsoft_snippets  # pylint: disable=wrong-import-position
+import pfmsoft.snippets  # pylint: disable=wrong-import-position
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information

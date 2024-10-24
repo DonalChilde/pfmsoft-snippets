@@ -14,21 +14,18 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
 
 ]
-name = "pfmsoft-snippets"
+name = "pfmsoft.snippets"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
-authors = [
-    { name = "Chad Lowe" },
-    { email = "pfmsoft.dev@gmail.com" },
-]
+authors = [{ name = "Chad Lowe" }, { email = "pfmsoft.dev@gmail.com" }]
 dynamic = ["version", "description"]
 # https://chrisholdgraf.com/blog/2022/install-github-from-pyproject/
 # https://peps.python.org/pep-0508/#examples
 dependencies = ["click"]
 
-[project.scripts]
-pfmsoft-snippets = "pfmsoft_snippets.pfmsoft_snippets_cli:main"
+# [project.scripts]
+# pfmsoft-snippets = "pfmsoft.pfmsoft_snippets_cli:main"
 
 [project.urls]
 Documentation = "https://github.com/DonalChilde/pfmsoft-snippets#readme"
@@ -101,7 +98,7 @@ parallel = true
 
 [tool.scriv]
 #version = "literal: pyproject.toml: project.version"
-version = "literal: src/pfmsoft_snippets/__init__.py: __version__"
+version = "literal: src/pfmsoft/snippets/__init__.py: __version__"
 format = "md"
 md_header_level = "2"
 entry_title_template = "file: changelog.d/templates/entry_title_template.md.j2"
