@@ -23,10 +23,14 @@ Before a release, ensure all of the following are completed.
 
 ```bash
 # Make a release branch from the dev branch
-git checkout -b release-0.0.0
-git push -u origin release-0.0.0
+#git checkout -b release-0.0.0
+#git push -u origin release-0.0.0
+git checkout -b release-__version__
+git push -u origin release-__version__
 
 # Tag the release version on the main branch
-git tag -a 0.0.0 -m "release 0.0.0"
-git push origin v0.0.0
+#git tag -a 0.0.0 -m "release 0.0.0"
+#git push origin 0.0.0
+git tag -a __version__ -m "release __version__"
+git push origin __version__
 ```

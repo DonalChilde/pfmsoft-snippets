@@ -11,6 +11,18 @@
 <!-- Copy paste release notes below here -->
 <!-- scriv-insert-here -->
 
+## [0.0.2](https://github.com/DonalChilde/pfmsoft-snippets/compare/0.0.1...0.0.2) —  2024-10-24
+
+### Whats Changed in 0.0.2
+
+### Added
+
+- file hash snippets
+
+- Add py.typed file to flag that project uses typed code
+  - closes
+    - add py.typed[#2](https://github.com/DonalChilde/pfmsoft-snippets/issues/2)
+
 ## [0.0.1](https://github.com/DonalChilde/pfmsoft-snippets/compare/0.0.0...0.0.1) —  2024-10-24
 
 ### Whats Changed in 0.0.1
