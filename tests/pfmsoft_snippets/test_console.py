@@ -3,7 +3,7 @@
 import pytest
 from click.testing import CliRunner
 
-from pfmsoft_snippets import pfmsoft_snippets_cli
+from pfmsoft import pfmsoft_snippets_cli
 
 
 @pytest.fixture
