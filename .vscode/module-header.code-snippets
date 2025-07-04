@@ -17,7 +17,7 @@
       "# Created by: Chad Lowe                            #",
       "# Created on: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}-07:00            #",
       "# Last Modified: _iso_date_         #",
-      "# Source: https://github.com/DonalChilde/snippets  #",
+      "# Source: https://github.com/DonalChilde/pfmsoft_snippets  #",
       "####################################################"
     ],
     "description": "File header with some metadata."
