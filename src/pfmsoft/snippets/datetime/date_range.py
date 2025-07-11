@@ -9,13 +9,12 @@
 # Source: https://github.com/DonalChilde/pfmsoft_snippets  #
 ####################################################
 
+from collections.abc import Iterator
 from datetime import date, timedelta
-from typing import Iterator
 
 
 def date_range(start_date: date, end_date: date) -> Iterator[date]:
-    """
-    Generate a range of dates from start_date to end_date, inclusive.
+    """Generate a range of dates from start_date to end_date, inclusive.
 
     Args:
         start_date (date): The starting date.
@@ -31,8 +30,7 @@ def date_range(start_date: date, end_date: date) -> Iterator[date]:
 
 
 def date_range_period(start_date: date, end_date: date, period: int) -> Iterator[date]:
-    """
-    Generate a range of dates from start_date to end_date, inclusive, with a specified period.
+    """Generate a range of dates from start_date to end_date, inclusive, with a specified period.
 
     Args:
         start_date (date): The starting date.
@@ -48,19 +46,19 @@ def date_range_period(start_date: date, end_date: date, period: int) -> Iterator
         current_date += timedelta(days=period)
 
 
-def date_range_days(start_date: date, days: int) -> Iterator[date]:
-    """
-    Generate a range of dates starting from start_date for a specified number of days, inclusive.
+def date_range_days(start_date: date, days: int, past: bool = False) -> Iterator[date]:
+    """Generate a range of dates starting from start_date for a specified number of days, inclusive.
 
     Args:
         start_date (date): The starting date.
-        days (int): The number of days to generate. Use a negative value to generate dates in reverse order.
+        days (int): The number of days to generate.
+        past (bool): True if date range counts backwards from start date. Default is False.
 
     Yields:
         date: Each date in the range starting from start_date for the specified number of days.
     """
-    if days < 0:
-        day_range = range(0, days, -1)
+    if past:
+        day_range = range(0, days * -1, -1)
     else:
         day_range = range(0, days)
     for i in day_range:
